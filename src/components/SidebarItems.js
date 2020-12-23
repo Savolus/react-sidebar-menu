@@ -1,7 +1,7 @@
 import { SidebarData } from './SidebarData'
 import SidebarItem from './SidebarItem'
 
-function SidebarItems() {
+function SidebarItems({ toggleSidebar }) {
   return (
     <>
       {
@@ -9,7 +9,8 @@ function SidebarItems() {
           return (
             <SidebarItem 
               item={item} 
-              index={index} 
+              index={index}
+              toggleSidebar={toggleSidebar}
             />
           )
         })
